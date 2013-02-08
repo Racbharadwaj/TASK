@@ -1,0 +1,19 @@
+{% for g in general %}
+{% for e in education %}
+{% if forloop.first %}<table border="2" cellspacing="2" cellpadding="20">{% endif %}
+<tr>
+<td>{{g.job_code}}</td>
+<td>{{g.name}}</td>
+<td>{{g.fathers_name}}</td>
+<td>{{g.email}}</td>
+<td>{{g.address}}</td>
+<td>{{g.country}}</td>
+<td>{{g.state}}</td>
+<td>{{g.city}}</td>
+<td>{{e.institution}}</td>
+<td>{{e.boardORuniversity}}</td>
+</tr>
+{% if forloop.last %}</table>
+{% endif %}
+{% endfor %}
+{% endfor %}
